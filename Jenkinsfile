@@ -9,7 +9,7 @@ pipeline {
 
     stage('step 2') {
       steps {
-        s3Upload 'jenkinsbucketsaurabh'
+        s3Delete(bucket: 'jenkinsbucketsaurabh', path: 'https://jenkinsbucketsaurabh.s3-us-west-2.amazonaws.com/index.html')
       }
     }
 
